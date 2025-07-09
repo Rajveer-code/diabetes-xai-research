@@ -1,11 +1,10 @@
-# For use with pip install -r requirements.txt
-pandas
-numpy
-scikit-learn
-xgboost
-lightgbm
-shap
-matplotlib
-seaborn
-jupyter
-mlflow
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+xgboost>=1.7
+shap>=0.42
+pyreadstat>=1.2
+scipy>=1.11
+pingouin>=0.5
+matplotlib>=3.7
+seaborn>=0.12
