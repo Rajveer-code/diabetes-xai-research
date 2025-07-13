@@ -6,3 +6,4 @@
 [2025-07-12T10:55:00] select relevant columns and apply age filter for adults 18+
 [2025-07-12T16:11:00] create Diabetes_Outcome label from diagnosis and lab values
 [2025-07-13T11:30:00] rename and harmonize columns to match BRFSS naming convention
+[2025-07-13T14:09:00] save cleaned nhanes_final to processed data folder
