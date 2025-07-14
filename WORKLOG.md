@@ -8,3 +8,4 @@
 [2025-07-13T11:30:00] rename and harmonize columns to match BRFSS naming convention
 [2025-07-13T14:09:00] save cleaned nhanes_final to processed data folder
 [2025-07-14T09:47:00] load BRFSS XPT files for 2020 2021 2022 and concatenate
+[2025-07-14T13:22:00] select and rename BRFSS columns to match NHANES features
