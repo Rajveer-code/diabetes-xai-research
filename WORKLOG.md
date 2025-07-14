@@ -7,3 +7,4 @@
 [2025-07-12T16:11:00] create Diabetes_Outcome label from diagnosis and lab values
 [2025-07-13T11:30:00] rename and harmonize columns to match BRFSS naming convention
 [2025-07-13T14:09:00] save cleaned nhanes_final to processed data folder
+[2025-07-14T09:47:00] load BRFSS XPT files for 2020 2021 2022 and concatenate
