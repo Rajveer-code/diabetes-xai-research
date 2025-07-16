@@ -11,3 +11,4 @@
 [2025-07-14T13:22:00] select and rename BRFSS columns to match NHANES features
 [2025-07-15T10:18:00] harmonize BRFSS value codes for outcome age gender and smoking
 [2025-07-15T15:44:00] fix BMI scaling divide-by-100 and save brfss_final
+[2025-07-16T11:05:00] load nhanes_final and define common 8-feature set
