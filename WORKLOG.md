@@ -13,3 +13,4 @@
 [2025-07-15T15:44:00] fix BMI scaling divide-by-100 and save brfss_final
 [2025-07-16T11:05:00] load nhanes_final and define common 8-feature set
 [2025-07-16T14:52:00] set up StratifiedKFold and SimpleImputer training pipeline
+[2025-07-18T09:33:00] run grid search for Logistic Regression and XGBoost
