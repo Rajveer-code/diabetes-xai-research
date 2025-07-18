@@ -15,3 +15,4 @@
 [2025-07-16T14:52:00] set up StratifiedKFold and SimpleImputer training pipeline
 [2025-07-18T09:33:00] run grid search for Logistic Regression and XGBoost
 [2025-07-18T13:15:00] run grid search for Random Forest and SVM with trimmed params
+[2025-07-18T17:40:00] save fold-by-fold results to internal validation CSV
