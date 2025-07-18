@@ -14,3 +14,4 @@
 [2025-07-16T11:05:00] load nhanes_final and define common 8-feature set
 [2025-07-16T14:52:00] set up StratifiedKFold and SimpleImputer training pipeline
 [2025-07-18T09:33:00] run grid search for Logistic Regression and XGBoost
+[2025-07-18T13:15:00] run grid search for Random Forest and SVM with trimmed params
