@@ -16,3 +16,4 @@
 [2025-07-18T09:33:00] run grid search for Logistic Regression and XGBoost
 [2025-07-18T13:15:00] run grid search for Random Forest and SVM with trimmed params
 [2025-07-18T17:40:00] save fold-by-fold results to internal validation CSV
+[2025-07-19T10:28:00] compute mean and SD across folds and build summary table
