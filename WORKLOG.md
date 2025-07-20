@@ -20,3 +20,4 @@
 [2025-07-19T14:03:00] pin manuscript mean values and add 95% CI column
 [2025-07-19T16:30:00] save TABLE_2_internal_validation to results folder
 [2025-07-20T09:54:00] retrain final XGBoost on NHANES and run BRFSS predictions
+[2025-07-20T13:40:00] fix missing outcome rows causing ValueError before model fit
