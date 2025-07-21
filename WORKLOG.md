@@ -23,3 +23,4 @@
 [2025-07-20T13:40:00] fix missing outcome rows causing ValueError before model fit
 [2025-07-20T16:07:00] compute external AUROC and log performance drop from internal
 [2025-07-21T10:22:00] add calibration plot and Brier score on external test set
+[2025-07-21T14:18:00] implement decision curve analysis across risk thresholds
