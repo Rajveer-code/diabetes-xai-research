@@ -26,3 +26,4 @@
 [2025-07-21T14:18:00] implement decision curve analysis across risk thresholds
 [2025-07-21T17:55:00] save external validation predictions for downstream analysis
 [2025-07-23T10:47:00] install shap and compute TreeExplainer values on test set
+[2025-07-23T13:31:00] generate global SHAP summary plot and save to figures
