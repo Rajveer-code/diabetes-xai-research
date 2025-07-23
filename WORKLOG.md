@@ -28,3 +28,4 @@
 [2025-07-23T10:47:00] install shap and compute TreeExplainer values on test set
 [2025-07-23T13:31:00] generate global SHAP summary plot and save to figures
 [2025-07-23T15:59:00] run fairness subgroup analysis by gender age and BMI
+[2025-07-23T18:22:00] save subgroup AUC breakdown table to results folder
