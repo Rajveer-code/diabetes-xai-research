@@ -29,3 +29,4 @@
 [2025-07-23T13:31:00] generate global SHAP summary plot and save to figures
 [2025-07-23T15:59:00] run fairness subgroup analysis by gender age and BMI
 [2025-07-23T18:22:00] save subgroup AUC breakdown table to results folder
+[2025-07-24T11:14:00] load both cohorts and run t-tests and chi-square for Table 1
