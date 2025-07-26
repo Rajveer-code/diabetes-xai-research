@@ -35,3 +35,4 @@
 [2025-07-26T11:55:00] build internal vs external comparison table with eight metrics
 [2025-07-26T14:29:00] remove duplicate header rows from grid search results file
 [2025-07-26T16:12:00] build feature importance comparison table across four models
+[2025-07-26T17:48:00] add F1 score computed from precision and recall to table
