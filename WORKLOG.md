@@ -31,3 +31,4 @@
 [2025-07-23T18:22:00] save subgroup AUC breakdown table to results folder
 [2025-07-24T11:14:00] load both cohorts and run t-tests and chi-square for Table 1
 [2025-07-24T16:45:00] compute Cohen's d effect sizes for continuous variables
+[2025-07-26T09:38:00] fix BMI unit mismatch between NHANES and BRFSS before tests
