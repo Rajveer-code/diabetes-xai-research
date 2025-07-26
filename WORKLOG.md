@@ -33,3 +33,4 @@
 [2025-07-24T16:45:00] compute Cohen's d effect sizes for continuous variables
 [2025-07-26T09:38:00] fix BMI unit mismatch between NHANES and BRFSS before tests
 [2025-07-26T11:55:00] build internal vs external comparison table with eight metrics
+[2025-07-26T14:29:00] remove duplicate header rows from grid search results file
