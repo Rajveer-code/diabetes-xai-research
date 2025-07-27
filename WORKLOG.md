@@ -39,3 +39,4 @@
 [2025-07-27T09:22:00] add roc_delong helper for pairwise AUROC significance testing
 [2025-07-27T10:48:00] load NHANES and BRFSS datasets and inspect shapes and columns
 [2025-07-27T14:17:00] run DeLong test between XGBoost and Logistic Regression AUCs
+[2025-07-27T17:03:00] save table1_characteristics to results folder
