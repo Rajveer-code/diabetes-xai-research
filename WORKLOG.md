@@ -40,3 +40,4 @@
 [2025-07-27T10:48:00] load NHANES and BRFSS datasets and inspect shapes and columns
 [2025-07-27T14:17:00] run DeLong test between XGBoost and Logistic Regression AUCs
 [2025-07-27T17:03:00] save table1_characteristics to results folder
+[2025-07-28T10:35:00] run all four models with bootstrap CIs on external BRFSS set
