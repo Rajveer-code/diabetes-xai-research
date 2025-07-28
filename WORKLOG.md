@@ -41,3 +41,4 @@
 [2025-07-27T14:17:00] run DeLong test between XGBoost and Logistic Regression AUCs
 [2025-07-27T17:03:00] save table1_characteristics to results folder
 [2025-07-28T10:35:00] run all four models with bootstrap CIs on external BRFSS set
+[2025-07-28T15:42:00] run expanded fairness analysis with SE-based confidence intervals
