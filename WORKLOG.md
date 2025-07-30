@@ -44,3 +44,4 @@
 [2025-07-28T15:42:00] run expanded fairness analysis with SE-based confidence intervals
 [2025-07-30T10:09:00] fix calibration correction by using proper holdout split
 [2025-07-30T13:44:00] run sensitivity analysis on median vs mode vs KNN imputation
+[2025-07-30T15:27:00] run sensitivity analysis across seven decision thresholds
