@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+venv/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Data - NEVER commit raw data to Git
+data/raw/
+data/processed/
+data/external/
+
+# Environment
+.env
+
+# IDE specific
+.vscode/
+.idea/
+
+# Experiments
+experiments/

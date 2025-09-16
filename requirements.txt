@@ -1,0 +1,11 @@
+# For use with pip install -r requirements.txt
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+shap
+matplotlib
+seaborn
+jupyter
+mlflow
