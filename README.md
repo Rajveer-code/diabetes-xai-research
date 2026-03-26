@@ -1,55 +1,33 @@
 # Comprehensive Evaluation of Machine Learning for Type 2 Diabetes Risk Prediction
+### Large-Scale External Validation, Explainability, and Fairness Analysis
 
-<p align="center">
-  <em>Large-scale external validation, interpretability (SHAP), calibration, and fairness analysis.</em>
-</p>
-
-<p align="center">
-  <a href="#project-at-a-glance">Project Overview</a> •
-  <a href="#main-results">Main Results</a> •
-  <a href="#repository-structure">Repository Structure</a> •
-  <a href="#reproducibility-guide">Reproducibility</a> •
-  <a href="#for-reviewers-and-recruiters">For Reviewers</a>
-</p>
+> **Accepted Paper (IEEE Conference)**  
+> This repository contains the full research workflow, analysis artifacts, and reproducible outputs for our accepted IEEE conference study on real-world diabetes risk prediction.
 
 ---
 
-## Paper status
-This repository accompanies our accepted IEEE conference paper on robust evaluation of Type 2 diabetes risk prediction under real-world distribution shift.
+## Why this project matters
+Most diabetes risk models report strong internal validation, but many degrade in real-world deployment.  
+This project evaluates that gap rigorously by combining:
 
-> 📌 **Note:** If proceedings metadata (DOI, page numbers, final title formatting) are pending, update the citation section after publication.
+- **Large-scale external validation** (NHANES → BRFSS)
+- **Model explainability** using SHAP
+- **Subgroup fairness analysis** across age, sex, and BMI
+- **Calibration and clinical utility checks**
+
+The goal is not only to build an accurate model—but to understand whether it remains reliable and equitable in realistic settings.
 
 ---
 
-## Project at a glance
-Many clinical ML studies report good internal performance but do not test enough for real-world deployment risk.  
-This work addresses that gap with a structured evaluation framework:
-
+## Research summary (high level)
 - **Development cohort:** NHANES (2015–2020)
 - **External validation cohort:** BRFSS (2020–2022)
-- **Models compared:** Logistic Regression, Random Forest, SVM (RBF), XGBoost
-- **Interpretability:** SHAP global/feature-level attribution
-- **Reliability checks:** discrimination, calibration, clinical utility
-- **Fairness checks:** subgroup analysis across age, sex, and BMI
-
-The central goal is practical: evaluate whether strong internal metrics remain trustworthy across population shift.
-
----
-
-## Main results
-### Key observations from the accepted study
-- Internal performance was stronger than external performance, highlighting deployment risk under shift.
-- XGBoost remained the strongest baseline model in internal validation.
-- SHAP ranked clinically meaningful factors (for example: age, BMI, physical activity).
-- Subgroup analysis identified performance disparities, especially in high-risk vulnerable groups.
-- Calibration and decision-curve checks provided additional clinical-context interpretation beyond AUROC alone.
-
-### Reported paper-level metrics (headline)
-- **Internal AUROC (XGBoost):** ~0.794
-- **External AUROC (XGBoost):** ~0.717
-- **Relative external drop:** ~9.7%
-
-> Exact confidence intervals and subgroup tables are available in repository outputs and manuscript artifacts.
+- **Primary model family:** Logistic Regression, Random Forest, SVM, XGBoost
+- **Best internal model:** XGBoost
+- **Core findings:**
+  - Internal performance is substantially stronger than external performance.
+  - Fairness disparities were observed in vulnerable subgroups (especially age and BMI strata).
+  - SHAP analysis showed clinically meaningful drivers (age, BMI, physical activity, etc.).
 
 ---
 
@@ -58,8 +36,8 @@ The central goal is practical: evaluate whether strong internal metrics remain t
 ```text
 .
 ├── data/
-│   ├── 02_intermediate/         # merged intermediate datasets
-│   └── 03_processed/            # processed final model-ready datasets
+│   ├── 02_intermediate/
+│   └── 03_processed/
 ├── notebooks/
 │   ├── 01_nhanes_processing.ipynb
 │   ├── 02_brfss_processing.ipynb
@@ -68,87 +46,73 @@ The central goal is practical: evaluate whether strong internal metrics remain t
 │   ├── 04_manuscript_tables.ipynb
 │   ├── 05_final_analysis_and_tables.ipynb
 │   └── roc_delong.py
-├── reports/                     # figures and supplementary visuals
-├── results/                     # final exported tables (canonical)
-├── docs/                        # manuscript assets and protocol docs
-├── archive/                     # legacy, drafts, and supplementary moved from active tree
-└── final_analysis.py            # main analysis script
+├── reports/
+│   ├── figures/
+│   ├── tables/
+│   └── paper/
+├── results/
+├── src/
+└── README.md
 ```
 
 ---
 
-## Reproducibility guide
+## Reproducibility
 
 ### 1) Environment setup
-Using Conda:
 ```bash
 conda env create -f environment.yml
 conda activate diabetes-xai
 ```
 
-Using pip/venv:
+_or with pip:_
 ```bash
 python -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
+source .venv/bin/activate   # on Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2) Recommended execution order
-1. `notebooks/01_nhanes_processing.ipynb`
-2. `notebooks/02_brfss_processing.ipynb`
-3. `notebooks/02_model_training.ipynb`
-4. `notebooks/03_external_validation.ipynb`
-5. `notebooks/04_manuscript_tables.ipynb`
+### 2) Suggested run order
+1. `notebooks/01_nhanes_processing.ipynb`  
+2. `notebooks/02_brfss_processing.ipynb`  
+3. `notebooks/02_model_training.ipynb`  
+4. `notebooks/03_external_validation.ipynb`  
+5. `notebooks/04_manuscript_tables.ipynb`  
 6. `notebooks/05_final_analysis_and_tables.ipynb`
 
-### 3) Canonical outputs
-- **Primary tables:** `results/`
-- **Primary figures:** `reports/`
-- **Manuscript artifacts:** `docs/`
+### 3) Main outputs
+- Final tables in `results/`
+- Figures in `reports/`
+- Manuscript assets in `docs/` and `reports/paper/`
 
 ---
 
-## Data availability and size policy
-Due to GitHub file-size constraints, extremely large raw source files are not fully tracked in this repository.
-
-For full reruns:
-- Download official raw files from CDC NHANES/BRFSS sources.
-- Place raw files in local data directories as expected by notebooks/scripts.
-- Keep `results/` as the canonical source for manuscript tables.
+## Data note
+This repository does **not** include all raw public data dumps due file-size and hosting limits.  
+Please download raw NHANES/BRFSS files directly from official CDC sources and place them into your local data folders before full reruns.
 
 ---
 
-## For reviewers and recruiters
-If you're reviewing this project quickly:
-1. Read **Main results** in this README.
-2. Open `results/` for final exported paper tables.
-3. Check `reports/` for key figures (ROC, SHAP, fairness).
-4. Inspect notebook order for full reproducibility.
+## For reviewers and collaborators
+If you are reviewing this repository for academic or professional purposes:
+- Start with this README and the notebook run order above.
+- Then inspect `results/` for manuscript-ready tabular outputs.
+- Then inspect `reports/` for figures and supplementary analysis.
 
-This repository is organized to communicate both **technical depth** and **deployment realism** in healthcare ML.
+If you need a minimal “paper-only” artifact set, open an issue and I’ll share a compact release layout.
 
 ---
 
 ## Citation
-If you use this work, please cite the IEEE paper (BibTeX to be updated after proceedings publication).
-
-```bibtex
-@inproceedings{pall2026diabetesxai,
-  title   = {Comprehensive Evaluation of Machine Learning for Type 2 Diabetes Risk Prediction},
-  author  = {Pall, Rajveer Singh and collaborators},
-  booktitle = {IEEE Conference Proceedings},
-  year    = {2026},
-  note    = {Accepted; metadata to be updated after publication}
-}
-```
+If you use this work, please cite the IEEE conference paper (BibTeX entry will be added after proceedings publication).
 
 ---
 
 ## Contact
 **Rajveer Singh Pall**  
-For collaboration, replication requests, or academic inquiries, please open an issue in this repository.
+For collaboration, replication requests, or academic inquiries, please open an Issue or contact via your listed academic profile.
 
 ---
 
 ## License
-Released under the MIT License. See `LICENSE`.
+MIT License (see `LICENSE`).
