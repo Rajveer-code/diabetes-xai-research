@@ -1,0 +1,17 @@
+name: diabetes-xai
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - pandas
+    - numpy
+    - scikit-learn
+    - xgboost
+    - lightgbm
+    - shap
+    - matplotlib
+    - seaborn
+    - jupyter
+    - mlflow

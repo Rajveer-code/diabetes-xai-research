@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Large raw datasets (do NOT push)
+data/01_raw/BRFSS/
+data/01_raw/NHANES/
+
+# Optional: keep processed only
+# data/02_intermediate/
+# data/03_processed/
+
+# OS / editor
+.DS_Store
+Thumbs.db

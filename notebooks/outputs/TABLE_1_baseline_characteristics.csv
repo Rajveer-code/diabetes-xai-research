@@ -1,0 +1,16 @@
+Characteristic,NHANES,BRFSS
+"Age, years (mean ± SD)",49.0 ± 18.6,55.1 ± 17.7
+"BMI, kg/m² (mean ± SD)",29.7 ± 7.4,28.5 ± 6.5
+"Male, n (%)",7605 (48.5%),596991 (46.4%)
+"Female, n (%)",8080 (51.5%),688792 (53.6%)
+"Hispanic, n (%)",3984 (25.4%),14078 (1.1%)
+"Non-Hispanic White, n (%)",5284 (33.7%),618605 (48.1%)
+"Non-Hispanic Black, n (%)",3820 (24.4%),62902 (4.9%)
+"Other/Multiracial, n (%)",1898 (12.1%),21546 (1.7%)
+"Ever Smoker (Current + Former), n (%)",6311 (40.2%),487117 (37.9%)
+"Never Smoker, n (%)",9358 (59.7%),717134 (55.8%)
+"Physically Active, n (%)",3981 (25.4%),974180 (75.8%)
+"Not Active, n (%)",0 (0.0%),308900 (24.0%)
+"Heart Attack (Yes), n (%)",667 (4.3%),69896 (5.4%)
+"Stroke (Yes), n (%)",696 (4.4%),52129 (4.1%)
+"Diabetes (Yes), n (%)",2908 (18.5%),170868 (13.3%)
