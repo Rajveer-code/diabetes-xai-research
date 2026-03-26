@@ -1,0 +1,7 @@
+Subgroup,Category,n,AUC,95% CI,p-value*
+Gender,Female,"687,435",0.719,"[0.718, 0.721]",0.565
+Gender,Male,"595,462",0.718,"[0.716, 0.720]",-
+Race/Ethnicity,"White, Non-Hispanic","617,782",0.737,"[0.735, 0.739]",-
+Race/Ethnicity,"Black, Non-Hispanic","62,770",0.73,"[0.726, 0.735]",0.285
+Race/Ethnicity,Hispanic,"14,042",0.719,"[0.709, 0.728]",0.103
+Race/Ethnicity,Other/Multiracial,"21,467",0.781,"[0.772, 0.789]",<0.001

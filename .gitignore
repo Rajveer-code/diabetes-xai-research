@@ -4,23 +4,35 @@ __pycache__/
 *.pyo
 *.pyd
 *.egg-info/
+
+# Virtual environments
+.venv/
 venv/
 env/
 
-# Jupyter Notebook
+# Jupyter
 .ipynb_checkpoints/
 
-# Data - NEVER commit raw data to Git
-data/raw/
-data/processed/
-data/external/
-
-# Environment
+# Environment variables
 .env
 
-# IDE specific
+# Data (never commit raw data)
+data/raw/
+data/external/
+data/01_raw/BRFSS/
+data/01_raw/NHANES/
+
+# Optional processed data (keep commented if needed)
+# data/02_intermediate/
+# data/03_processed/
+
+# Outputs / experiments
+experiments/
+notebooks/outputs/
+results/
+
+# IDE / OS
 .vscode/
 .idea/
-
-# Experiments
-experiments/
+.DS_Store
+Thumbs.db

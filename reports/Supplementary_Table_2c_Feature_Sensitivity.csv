@@ -1,0 +1,4 @@
+Feature Set,External AUC
+Full Model (8 features),0.71715947
+Without Race/Ethnicity,0.736590637
+Age + BMI only,0.747685576

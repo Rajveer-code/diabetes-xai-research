@@ -1,0 +1,4 @@
+Method,Brier Score
+Uncalibrated (Original),0.12400779142116666
+Platt Scaling,0.10817318784522889
+Isotonic Regression,0.10722263647912025

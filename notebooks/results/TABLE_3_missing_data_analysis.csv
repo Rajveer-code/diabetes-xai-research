@@ -1,0 +1,9 @@
+Feature,Missing in NHANES (%),Missing in BRFSS (%),Imputation Method
+Age,0.00%,2.10%,Median
+Gender,0.00%,0.00%,Mode
+Race_Ethnicity,0.00%,34.60%,Mode
+BMI,7.90%,10.70%,Median
+Smoking_Status,0.00%,6.30%,Mode
+Physical_Activity,0.00%,0.20%,Mode
+History_Heart_Attack,4.70%,0.60%,Mode
+History_Stroke,4.70%,0.30%,Mode

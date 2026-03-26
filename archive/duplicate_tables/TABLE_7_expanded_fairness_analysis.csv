@@ -1,0 +1,18 @@
+Subgroup,Category,n,AUC (95% CI),Brier Score
+-- Gender --,,,,
+Gender,Male,"687,435",0.712 [0.710-0.714],0.1226
+Gender,Female,"595,462",0.723 [0.721-0.725],0.1255
+-- Race/Ethnicity --,,,,
+Race/Ethnicity,"White, NH","617,782",0.742 [0.740-0.744],0.1358
+Race/Ethnicity,"Black, NH","62,770",0.728 [0.723-0.734],0.1445
+Race/Ethnicity,Other/Multi,"21,467",0.803 [0.791-0.815],0.078
+Race/Ethnicity,Hispanic,"14,042",0.726 [0.714-0.737],0.1461
+-- Age Group --,,,,
+Age Group,40-59 years,"377,667",0.678 [0.675-0.681],0.1184
+Age Group,60+ years,"578,859",0.607 [0.605-0.609],0.1796
+Age Group,18-39 years,"300,125",0.706 [0.700-0.713],0.0249
+-- BMI Category --,,,,
+BMI Category,Underweight,"19,011",0.647 [0.629-0.666],0.0622
+BMI Category,Overweight,"407,122",0.653 [0.650-0.655],0.113
+BMI Category,Normal,"342,140",0.661 [0.657-0.665],0.0678
+BMI Category,Obese,"378,678",0.666 [0.664-0.668],0.1933

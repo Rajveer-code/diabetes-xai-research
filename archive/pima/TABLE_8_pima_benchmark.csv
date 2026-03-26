@@ -1,0 +1,8 @@
+Method,AUC,Accuracy,Sensitivity,F1,Reference/Note
+Tasin et al. (2023),0.84,0.81,0.81,0.81,XGBoost + ADASYN
+Kopitar et al. (2020),0.859,,0.764,,Glmnet (T30)
+Hassan et al. (2020),0.95,,,,Ensemble method
+XGBoost (this study),0.841122507,0.766814764,0.604415954,0.642174097,Our implementation (10-fold CV)
+Logistic Regression,0.831806268,0.749880383,0.72037037,0.668563698,Our implementation (10-fold CV)
+Random Forest,0.834794872,0.757655502,0.757407407,0.685642018,Our implementation (10-fold CV)
+SVM,0.830518519,0.751196172,0.698005698,0.662311584,Our implementation (10-fold CV)

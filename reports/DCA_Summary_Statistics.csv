@@ -1,0 +1,5 @@
+Threshold,XGBoost_NetBenefit,TreatAll_NetBenefit,AdditionalBenefit_per_1000
+5%,0.0944,0.0880,6.4
+10%,0.0601,0.0378,22.3
+15%,0.0293,-0.0181,47.4
+20%,0.0017,-0.0809,82.7

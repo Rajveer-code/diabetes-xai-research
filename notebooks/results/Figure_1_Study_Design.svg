@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="880px" height="1400px" viewBox="0 0 880 1400" version="1.1">
+  <defs>
+    <style type="text/css"><![CDATA[
+      @font-face {
+        font-family: 'Arial';
+        src: local('Arial');
+      }
+      
+      .node-fill { fill: #EAF4FF; stroke: #2B4F6F; stroke-width: 1.5; }
+      .node-accent { fill: #B7CFE6; stroke: #2B4F6F; stroke-width: 1.5; }
+      .parallelogram-fill { fill: #EAF4FF; stroke: #2B4F6F; stroke-width: 1.5; }
+      
+      .heading-text { 
+        font-family: Arial, sans-serif; 
+        font-size: 12pt; 
+        font-weight: bold;
+        fill: #000000; 
+        text-anchor: middle; 
+      }
+      
+      .body-text { 
+        font-family: Arial, sans-serif; 
+        font-size: 10pt; 
+        fill: #000000; 
+        text-anchor: middle; 
+      }
+      
+      .body-text-left { 
+        font-family: Arial, sans-serif; 
+        font-size: 10pt; 
+        fill: #000000; 
+        text-anchor: start; 
+      }
+      
+      .label-text { 
+        font-family: Arial, sans-serif; 
+        font-size: 9pt; 
+        fill: #2B4F6F; 
+        text-anchor: middle; 
+      }
+      
+      .lane-title { 
+        font-family: Arial, sans-serif; 
+        font-size: 11pt; 
+        font-weight: bold;
+        fill: #2B4F6F; 
+        text-anchor: middle; 
+      }
+      
+      .caption-text { 
+        font-family: Arial, sans-serif; 
+        font-size: 9pt; 
+        fill: #000000; 
+      }
+      
+      .italic { font-style: italic; }
+    ]]></style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2B4F6F" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="880" height="1400" fill="#FFFFFF"/>
+
+  <!-- Lane titles -->
+  <text x="220" y="25" class="lane-title">Development Process</text>
+  <text x="660" y="25" class="lane-title">External Validation Cohort</text>
+
+  <!-- N1: NHANES 2015-2020 -->
+  <rect x="70" y="50" rx="6" ry="6" width="300" height="60" class="node-fill"/>
+  <text x="220" y="73" class="heading-text">NHANES 2015-2020</text>
+  <text x="220" y="95" class="body-text">(Development)</text>
+
+  <!-- N2: BRFSS 2020-2022 -->
+  <rect x="510" y="50" rx="6" ry="6" width="300" height="60" class="node-fill"/>
+  <text x="660" y="73" class="heading-text">BRFSS 2020-2022</text>
+  <text x="660" y="95" class="body-text">(External)</text>
+
+  <!-- N3: Raw Data (left parallelogram) -->
+  <polygon points="80,170 360,170 350,220 70,220" class="parallelogram-fill"/>
+  <text x="215" y="200" class="body-text">Raw Data</text>
+
+  <!-- N4: Raw Data (right parallelogram) -->
+  <polygon points="520,170 800,170 790,220 510,220" class="parallelogram-fill"/>
+  <text x="655" y="200" class="body-text">Raw Data</text>
+
+  <!-- N5: Development Cohort -->
+  <rect x="70" y="320" rx="6" ry="6" width="300" height="60" class="node-fill"/>
+  <text x="220" y="343" class="body-text">Development Cohort</text>
+  <text x="220" y="365" class="body-text">(n=15,685)</text>
+
+  <!-- N6: BRFSS Cohort (changed to rectangle) -->
+  <rect x="510" y="320" rx="6" ry="6" width="300" height="70" class="node-accent"/>
+  <text x="660" y="348" class="body-text">BRFSS Cohort</text>
+  <text x="660" y="370" class="body-text">(n=1,282,897)</text>
+
+  <!-- N7: Nested Cross-Validation -->
+  <rect x="70" y="500" rx="6" ry="6" width="300" height="50" class="node-fill"/>
+  <text x="220" y="530" class="body-text">Nested Cross-Validation</text>
+
+  <!-- N8: Hyperparameter Tuning & Model Selection -->
+  <rect x="70" y="630" rx="6" ry="6" width="300" height="60" class="node-fill"/>
+  <text x="220" y="653" class="body-text">Hyperparameter Tuning</text>
+  <text x="220" y="673" class="body-text">&amp; Model Selection</text>
+
+  <!-- N9: 4 Models -->
+  <rect x="70" y="770" rx="6" ry="6" width="300" height="110" class="node-fill"/>
+  <text x="85" y="793" class="body-text-left" style="font-weight: bold;">4 Models</text>
+  <text x="85" y="813" class="body-text-left">• Logistic Regression</text>
+  <text x="85" y="833" class="body-text-left">• Random Forest</text>
+  <text x="85" y="853" class="body-text-left">• XGBoost ✓</text>
+  <text x="85" y="873" class="body-text-left">• SVM</text>
+
+  <!-- N10: Final Model (changed to rectangle) -->
+  <rect x="350" y="965" rx="6" ry="6" width="180" height="60" class="node-accent"/>
+  <text x="440" y="990" class="body-text">Final Model</text>
+  <text x="440" y="1010" class="body-text">(XGBoost)</text>
+
+  <!-- N11: Multi-Dim. Evaluation -->
+  <rect x="340" y="1120" rx="6" ry="6" width="200" height="110" class="node-fill"/>
+  <text x="355" y="1143" class="body-text-left" style="font-weight: bold;">Multi-Dim. Evaluation</text>
+  <text x="355" y="1163" class="body-text-left">• AUC</text>
+  <text x="355" y="1183" class="body-text-left">• Calibration</text>
+  <text x="355" y="1203" class="body-text-left">• DCA</text>
+  <text x="355" y="1223" class="body-text-left">• Fairness</text>
+
+  <!-- Connectors -->
+  
+  <!-- N1 -> N3 -->
+  <line x1="220" y1="110" x2="220" y2="170" stroke="#2B4F6F" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- N2 -> N4 -->
+  <line x1="660" y1="110" x2="660" y2="170" stroke="#2B4F6F" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- N3 -> N5 with label -->
+  <line x1="215" y1="220" x2="220" y2="320" stroke="#2B4F6F" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="220" y="257" class="label-text">Inclusion Criteria:</text>
+  <text x="220" y="270" class="label-text">• Age ≥ 18</text>
+  <text x="220" y="283" class="label-text">• Complete Predictors</text>
+
+  <!-- N4 -> N6 with dashed line and label -->
+  <line x1="655" y1="220" x2="660" y2="320" stroke="#2B4F6F" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="660" y="260" class="label-text italic">HELD OUT</text>
+  <text x="660" y="275" class="label-text italic">(No access until final evaluation)</text>
+
+  <!-- N5 -> N7 -->
+  <line x1="220" y1="380" x2="220" y2="500" stroke="#2B4F6F" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- N7 -> N8 with label -->
+  <line x1="220" y1="550" x2="220" y2="630" stroke="#2B4F6F" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="220" y="595" class="label-text">5-fold outer, 3-fold inner</text>
+
+  <!-- N8 -> N9 -->
+  <line x1="220" y1="690" x2="220" y2="770" stroke="#2B4F6F" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- N9 -> N10 with label -->
+  <line x1="270" y1="880" x2="390" y2="965" stroke="#2B4F6F" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="330" y="920" class="label-text">Best Model Selected</text>
+
+  <!-- N10 -> N11 with label -->
+  <line x1="440" y1="1025" x2="440" y2="1120" stroke="#2B4F6F" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="440" y="1078" class="label-text">ONE-TIME EVALUATION</text>
+
+  <!-- N6 -> N11 (curved path) -->
+  <path d="M 660 390 Q 660 750, 500 1120" fill="none" stroke="#2B4F6F" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+</svg>

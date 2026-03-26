@@ -1,0 +1,24 @@
+Characteristic,"NHANES Development Cohort (n=15,685)","BRFSS External Validation Cohort (n=1,282,897)",p-value*
+"Age, years (mean ± SD)",49.0 ± 18.6,55.2 ± 17.7,<0.001
+"BMI, kg/m² (mean ± SD)",29.7 ± 7.4,28.5 ± 6.5,<0.001
+"Gender, n (%)",,,<0.001
+  Female,"8,080 (51.5%)","687,435 (53.6%)",
+  Male,"7,605 (48.5%)","595,462 (46.4%)",
+"Race/Ethnicity, n (%)",,,<0.001
+"  White, Non-Hispanic","2,195 (14.0%)","617,782 (48.2%)",
+"  Black, Non-Hispanic","1,789 (11.4%)","62,770 (4.9%)",
+  Hispanic,"5,284 (33.7%)","14,042 (1.1%)",
+  Missing,"2,597 (16.6%)","566,836 (44.2%)",
+  Other/Multiracial,"3,820 (24.4%)","21,467 (1.7%)",
+"Smoking Status, n (%)",,,<0.001
+  Current Smoker,"9,358 (59.7%)",0 (0.0%),
+  Former Smoker,"6,311 (40.2%)","486,231 (37.9%)",
+  Never Smoker,0 (0.0%),"715,799 (55.8%)",
+"Physical Activity, n (%)",,,<0.001
+  Yes,"3,981 (25.4%)","972,380 (75.8%)",
+"History of Heart Attack, n (%)",,,<0.001
+  Yes,667 (4.3%),"69,733 (5.4%)",
+"History of Stroke, n (%)",,,<0.001
+  Yes,696 (4.4%),"52,003 (4.1%)",
+"Diabetes Outcome, n (%)",,,<0.001
+  Yes,"2,908 (18.5%)","170,868 (13.3%)",
